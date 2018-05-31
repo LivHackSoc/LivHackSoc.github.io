@@ -3,12 +3,42 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>LivHackSoc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/theme.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/overlay.css" />
+
 </head>
+
 <body>
-    
+    <nav>
+        <!-- navigation menu  -->
+        <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Events</li>
+            <li class="s">Contact</li>
+
+            <div id="myNav" class="overlay">
+                    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                    </div>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </ul>
+    </nav>
+
+
+
+
+
+
+<script src="src/overlay-menu.js"></script>
 </body>
+
 </html>
