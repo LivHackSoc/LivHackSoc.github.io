@@ -1,19 +1,39 @@
 .committee > h1 {
     color: black;
     font-size: 3em;
+    text-align: center;
 }
 
 .committee-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
     grid-gap: 0.4em;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .committee-inner > div {
-    background: pink;
-    border: 5px solid red;
-    padding: 1em;
-    height: 200px;
+    /* background: #eee; */
+    text-align: center;
+    padding: 10px;
+}
+
+/* cannot target h3/h4 inside */
+/* .committee-inner > div > h3 {
+    color: pruple;
+} */
+
+h3 {
+    color: black;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: black;
+    font-size: 1.2em;
+}
+
+.profile-pic > img {
+    height: 250px;
   }
