@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [ "We are University of Liverpool Hackathon Society", "Major League Hacking on March/April 2019"];
+    var dataText = [ "University of Liverpool Hackathon Society", "Major League Hacking on March/April 2019", "Enhanced your skills, employability and win cool prizes :)"];
 
     function typeWriter(text, i, fnCallback) {
 
