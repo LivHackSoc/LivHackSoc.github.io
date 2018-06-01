@@ -69,33 +69,3 @@ ul > li {
     padding-right: 20px;
 }
 
-img {
-    height: 70px;
-    position: absolute;
-    float: right;
-    margin-left: 10px;
-}
-
-.landing-page {
-    height: 100vh;
-    width: 100%;
-    margin: auto;
-    background: url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6f3cb0473315ed1eca1b47d280bb2ab1&auto=format&fit=crop&w=1950&q=80) no-repeat 50% 50%;
-    /* background: pink; */
-    display: table;
-    top: 0;
-    background-size: cover;
-}
-
-.landing-page .inner {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-    max-width: none;
-}
-
-.landing-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
