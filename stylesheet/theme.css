@@ -71,6 +71,9 @@ ul > li {
 
 img {
     height: 70px;
+    position: fixed;
+    float: right;
+    margin-left: 10px;
 }
 
 .landing-page {
