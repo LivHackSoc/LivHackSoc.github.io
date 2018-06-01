@@ -1,11 +1,19 @@
-.committee {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 0.4em;
-    background: pink;
+.committee > h1 {
+    color: black;
+    font-size: 3em;
 }
 
-.committee > div {
-    padding: 0.5em;
+.committee-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.4em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.committee-inner > div {
+    background: pink;
+    border: 5px solid red;
+    padding: 1em;
+    height: 200px;
   }

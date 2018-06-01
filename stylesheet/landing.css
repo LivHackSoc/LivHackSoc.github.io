@@ -30,10 +30,11 @@
     margin-left: 10px;
 }
 
-.btn-mlh > img {
+button {
     height: 70px;
+    opacity: 0.8;
 }
 
-button {
+.btn-mlh > img {
     height: 70px;
 }
