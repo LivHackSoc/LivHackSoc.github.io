@@ -23,9 +23,17 @@
     text-align: center;
 }
 
-img {
+.logo > img {
     height: 70px;
     position: absolute;
     float: right;
     margin-left: 10px;
+}
+
+.btn-mlh > img {
+    height: 70px;
+}
+
+button {
+    height: 70px;
 }
