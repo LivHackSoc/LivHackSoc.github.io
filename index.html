@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/overlay.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/landing.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/committee.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="src/typewriter.js"></script>
 
     <!-- This is how to add favicon into a website -->
@@ -53,9 +54,9 @@
 <body>
 
     <!-- navigation menu  -->
-    <header class="navigation-bar">
+    <header id="navigation-bar">
         <nav>
-            <ul>
+            <ul id="navigation">
                 <li><a href="#">About</a></li>
                 <li><a href="#committee">Team</a></li>
                 <li><a href="#">Contact</a></li>
@@ -71,13 +72,13 @@
     </header>
 
     <section class="landing-page">
-        <div class="inner">
+        <div id="inner">
             <img src="assets/favicons/ms-icon-310x310.png" class="logo center"/>
             <div class="landing-content">
                 <h1 class="landing-title">Liverpool HackSoc
                 </h1>
-                <h2>We are University of Liverpool Hackathon society</h2>
-                <button class="btn-mlh"><img src="assets/favicons/MLH/android-chrome-192x192.png"/></button>
+                <h2 id="change-text">We are University of Liverpool Hackathon society</h2>
+                <button type="button" class="btn btn-primary">Check out our hackathon!</button>
             </div>
 
         </div>
@@ -178,6 +179,13 @@
                     </div>
                 </div>
         </div>
+    </section>
+    <section id="stay in touch">
+        <button type="button" class="btn btn-primary">Medium</button>
+        <button type="button" class="btn btn-primary">Slack</button>
+        <button type="button" class="btn btn-primary">TWitter</button>
+        <button type="button" class="btn btn-primary">Facebook</button>
+        <button type="button" class="btn btn-primary">Email</button>
     </section>
 
 
