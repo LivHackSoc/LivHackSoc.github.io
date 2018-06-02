@@ -10,11 +10,12 @@
     background-size: cover;
 }
 
-.landing-page .inner {
+.landing-page #inner {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     max-width: none;
+    color: #f7b733;
 }
 
 .landing-content {
@@ -54,4 +55,11 @@ button {
 
 .landing-title{
     margin: 1%;
+}
+#navigation-bar {
+    color: #f7b733;
+}
+
+#change-text{
+    color: #f8f8f8;
 }
