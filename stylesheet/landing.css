@@ -24,7 +24,7 @@
 }
 
 .logo > img {
-    height: 70px;
+    height: 10%;
     position: absolute;
     float: right;
     margin-left: 10px;
@@ -37,4 +37,21 @@ button {
 
 .btn-mlh > img {
     height: 70px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.logo {
+    height: 10%;
+    width: 10%;
+    margin-bottom: 5px;
+}
+
+.landing-title{
+    margin: 1%;
 }
