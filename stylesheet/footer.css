@@ -1,0 +1,20 @@
+#footer .btn {
+    color: #f8f8f8;
+    margin-left: 1%;
+}
+
+#footer {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#footer-copyright{
+    background-color: gold;
+    font-color: black;
+}
+
+.bio-icons a {
+    color: black;
+    font-size: 1.25em;
+    padding: 0.5%;
+  }
