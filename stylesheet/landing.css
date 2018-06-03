@@ -1,3 +1,7 @@
+* {
+    outline: 1px dashed red;
+}
+
 .landing-page {
     height: 100vh;
     width: 100%;
