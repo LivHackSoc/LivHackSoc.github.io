@@ -8,7 +8,7 @@
 .committee-inner {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows: repeat(2, 400px);
+    grid-template-rows: repeat(2, 430px);
     margin-right: 5%;
     margin-left: 5%;
 }
@@ -48,8 +48,8 @@
 }
 
 .text {
-    color: white;
-    text-shadow: 2px 2px 4px #000000;
+    color: black;
+    text-shadow: 2px 2px 4px white;
 }
 
 .social-network-logo {
