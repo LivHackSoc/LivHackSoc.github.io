@@ -7,11 +7,8 @@
 
 .committee-inner {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
-    grid-gap: 0.4em;
-    margin-left: 3%;
-    margin-right: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-rows: repeat(2, 400px);
 }
 
 .committee-inner > div {
@@ -30,7 +27,7 @@
 }
 
 .profile-info {
-    width: 60%;
+    width: 50%;
     transition: .5s ease;
     opacity: 0;
     position: absolute;
