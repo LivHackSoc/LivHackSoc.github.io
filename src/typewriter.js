@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var dataText = [ 
+    var dataText = [
       "University of Liverpool Hackathon Society",
      "Hackathon in March/April 2019",
       "Enhance your skills, employability and win cool prizes :)"];

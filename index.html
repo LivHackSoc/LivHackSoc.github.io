@@ -48,6 +48,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/about-us.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/committee.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/footer.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/contact-us.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
@@ -118,7 +119,7 @@
                            Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
                             quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
                    </div>
-           
+
                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
                          quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
@@ -288,6 +289,32 @@
             </div>
         </div>
     </section>
+
+    <section class="contact-us">
+      <div class="container">
+        <h1>Contact us</h1>
+        <div class="row">
+          <div class="column">
+            <div id="map" style="width:100%;height:500px"></div>
+          </div>
+          <div class="column">
+            <!-- Add action to email form -->
+            <form id="email_form">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" placeholder="Subject.."/label>
+              <label for="message" style="padding-top:20px">Your message</label>
+              <textarea name="text" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" id="js_send" value="Send">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="footer">
         <h1>Connect with us on</h1>
         <p class="bio-icons text-center">
@@ -323,6 +350,9 @@
 
     <script src="src/overlay-menu.js"></script>
     <script src="src/footer.js"></script>
+    <script src="src/contact-us.js"></script>
+    <!-- Our Google Maps API key = AIzaSyAZYYQ0Qh4eoouhUDsMQxrhn_VM4_aoW9s -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZYYQ0Qh4eoouhUDsMQxrhn_VM4_aoW9s&callback=myMap"></script>
 </body>
 
 </html>

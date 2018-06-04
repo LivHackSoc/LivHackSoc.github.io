@@ -17,6 +17,7 @@ body, body {
 h1 {
     font-family: 'Lato', sans-serif;
     font-size: 4em;
+    text-align: center;
 }
 
 h2, li {
@@ -72,4 +73,3 @@ ul > li {
     padding-top: 20px;
     padding-right: 20px;
 }
-
