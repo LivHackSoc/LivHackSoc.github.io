@@ -53,7 +53,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/colours.css" />
-    
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="https://livhacksoc.github.io//favicon.ico?v=2" />
 
@@ -301,17 +301,16 @@
             <div id="map" style="width:100%;height:500px"></div>
           </div>
           <div class="column">
-            <!-- Add action to email form -->
-            <form id="email_form">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              <label for="subject">Subject</label>
-              <input type="text" name="subject" placeholder="Subject.."/label>
+            <form action="https://formspree.io/hacksocliverpool@protonmail.com"
+              method="POST">
+              <label for="name">Your name</label>
+              <input type="text" name="name" placeholder="Your name..">
+              <label for="email">Your email</label>
+              <input type="email" name="_replyto" placeholder="Your email.." />
               <label for="message">Your message</label>
-              <textarea name="text" placeholder="Write something.." style="height:170px"></textarea>
-              <input type="submit" id="js_send" value="Send">
+              <textarea name="email-content" placeholder="Your message.."
+                        style="height:170px"></textarea>
+              <input type="submit" value="Send">
             </form>
           </div>
         </div>
@@ -337,6 +336,7 @@
         </div>
 
     </section>
+
     <section id="footer-copyright">
         <h5>©University of Liverpool HackSoc 2018. All rights reserved.</h5>
 
@@ -354,7 +354,6 @@
     <script src="src/overlay-menu.js"></script>
     <script src="src/footer.js"></script>
     <script src="src/contact-us.js"></script>
-    <!-- Our Google Maps API key = AIzaSyAZYYQ0Qh4eoouhUDsMQxrhn_VM4_aoW9s -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZYYQ0Qh4eoouhUDsMQxrhn_VM4_aoW9s&callback=myMap"></script>
 </body>
 

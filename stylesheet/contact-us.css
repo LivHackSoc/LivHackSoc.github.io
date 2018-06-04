@@ -3,17 +3,26 @@
   padding-bottom: 20px;
 }
 
+}
 * {
     box-sizing: border-box;
 }
 
 /* Style inputs */
-input[type=text], select, textarea {
+input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    margin-top: 6px;
     margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea[name=email-content] {
+    width: 100%;
+    height: 130px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom:   16px;
     resize: vertical;
 }
 

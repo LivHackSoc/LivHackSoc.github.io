@@ -24,6 +24,11 @@ h2, li {
     font-family: 'Roboto', sans-serif;
 }
 
+h5 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
 p {
     color: black;
 }

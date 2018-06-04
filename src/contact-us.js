@@ -8,5 +8,3 @@ function myMap() {
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 }
-
-// add functionality to email form here
