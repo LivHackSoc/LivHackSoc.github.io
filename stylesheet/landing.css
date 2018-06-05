@@ -57,6 +57,10 @@ button {
 
 #navigation-bar {
     color: #f7b733;
+    position: fixed;
+    background-color: black;
+    height: auto;
+    filter: opacity(90%);
 }
 
 #navigation > li > a {
@@ -66,3 +70,9 @@ button {
 #change-text{
     color: #f8f8f8;
 }
+
+ #homeBt {
+     visibility: hidden;
+     float: left;
+     margin-top: 15px;
+ }

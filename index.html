@@ -5,14 +5,14 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120210338-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        gtag('config', 'UA-120210338-1');
+    gtag('config', 'UA-120210338-1');
     </script>
 
     <meta charset="utf-8" />
@@ -51,8 +51,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/contact-us.css" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/colours.css" />
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheet/colours.css" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="https://livhacksoc.github.io//favicon.ico?v=2" />
@@ -77,13 +77,14 @@
     <header id="navigation-bar">
         <nav>
             <ul id="navigation">
-                <li>
+                <a href="#inner"><img src=assets/favicons/favicon-32x32.png id="homeBt" /></a>
+                <li id="about">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li id="team">
                     <a href="#committee">Team</a>
                 </li>
-                <li>
+                <li id="contact">
                     <a href="#contact-us">Contact</a>
                 </li>
                 <div id="myNav" class="overlay">
@@ -92,7 +93,7 @@
                         <a href="#">About</a>
                     </div>
                 </div>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <span id="navButton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </ul>
         </nav>
     </header>
@@ -114,19 +115,19 @@
     <section class="about-us">
         <h1>About Us</h1>
         <div class="about-us-content">
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
-                         quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
-                   </div>
-                   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                           Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
-                            quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
-                   </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
+                quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
+            </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
+                quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
+            </div>
 
-                   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
-                         quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
-                   </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dicta maiores quo fugiat doloribus voluptatum assumenda dolores saepe impedit,
+                quod molestias vero non quaerat aut. Illum error dolorem dolores vel quia?
+            </div>
         </div>
     </section>
 
@@ -142,219 +143,219 @@
                         <div class="text">Brandon is our Hackathon expert.
                             He is a top writer for A.I in Hackernoon.
                             In his spare time you can find him performing karate or watching the bee movie.</div>
-                    </div>
-                </div>
-                <h3>Brandon Skerritt</h3>
-                <h4>President</h4>
-                <div class="social-network-logo">
-                    <div class="first"></div>
-                    <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                    <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                    <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
-                </div>
-            </div>
-
-            <div>
-                <div class="profile-pic">
-                    <img src="assets/images/committee/Thep.png" class="image"/>
-                    <div class="profile-info">
-                        <div class="text">Brandon is the MLH organiser.
-                            He is a top writer for A.I in Hackernoon.
-                            In his spare time you can find him performing karate or watching the bee movie.</div>
-                    </div>
-                 </div>
-                <h3>Thepnathi</h3>
-                <h4>Vice-President</h4>
-                <div class="social-network-logo">
-                        <div class="first"></div>
-                        <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                        <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                        <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
-                    </div>
-
-            </div>
-
-            <div>
-                <div class="profile-pic">
-                    <img src="assets/images/committee/Rob.png" class="image"/>
-                    <div class="profile-info">
-                        <div class="text">Brandon is our Hackathon expert.
-                            He is a top writer for A.I in Hackernoon.
-                            In his spare time you can find him performing karate or watching the bee movie.</div>
-                    </div>
-                </div>
-                <h3>Robert Szafarczyk</h3>
-                <h4>Core Developer</h4>
-                <div class="social-network-logo">
-                        <div class="first"></div>
-                        <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                        <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                        <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
-                    </div>
-            </div>
-
-            <div>
-                <div class="profile-pic">
-                    <img src="assets/images/committee/Phil.png" class="image"/>
-                    <div class="profile-info">
-                        <div class="text">Phil likes dogs a little too much. Phil is our bank advisor and morale support.
-                            In his spare time you can find him looking at dogs pictures on Instagram or playing Football.
                         </div>
                     </div>
-                </div>
-                <h3>Phill Beattie</h3>
-                <h4>Hackathon Organiser</h4>
-                <div class="social-network-logo">
-                        <div class="first"></div>
-                        <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                        <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                        <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
-                    </div>
-            </div>
-
-            <div>
-                <div class="profile-pic">
-
-                    <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
-                    <div class="profile-info">
-                        <div class="text">Brandon is our Hackathon expert.
-                            He is a top writer for A.I in Hackernoon.
-                            In his spare time you can find him performing karate or watching the bee movie.</div>
-                    </div>
-                </div>
-                <h3>Brandon Skerritt</h3>
-                <h4>Treasurer</h4>
-                <div class="social-network-logo">
-                        <div class="first"></div>
-                        <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                        <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                        <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
-                    </div>
-            </div>
-
-                <div>
-                        <div class="profile-pic">
-                                <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
-                                <div class="profile-info">
-                                    <div class="text">Brandon is our Hackathon expert.
-                                        He is a top writer for A.I in Hackernoon.
-                                        In his spare time you can find him performing karate or watching the bee movie.</div>
-                                </div>
-                            </div>
                     <h3>Brandon Skerritt</h3>
-                    <h4>Equality Director</h4>
+                    <h4>President</h4>
                     <div class="social-network-logo">
-                            <div class="first"></div>
-                            <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                            <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                            <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
-                        </div>
+                        <div class="first"></div>
+                        <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                        <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                        <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                    </div>
                 </div>
 
                 <div>
-                        <div class="profile-pic">
-                                <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
-                                <div class="profile-info">
-                                    <div class="text">Brandon is our Hackathon expert.
-                                        He is a top writer for A.I in Hackernoon.
-                                        In his spare time you can find him performing karate or watching the bee movie.</div>
-                                </div>
+                    <div class="profile-pic">
+                        <img src="assets/images/committee/Thep.png" class="image"/>
+                        <div class="profile-info">
+                            <div class="text">Brandon is the MLH organiser.
+                                He is a top writer for A.I in Hackernoon.
+                                In his spare time you can find him performing karate or watching the bee movie.</div>
                             </div>
-                    <h3>Brandon Skerritt</h3>
-                    <h4>Core Developer</h4>
-                    <div class="social-network-logo">
-                            <div class="first"></div>
-                            <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
-                            <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
-                            <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
                         </div>
-                </div>
-
-                <div>
-                        <div class="profile-pic">
-                                <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
-                                <div class="profile-info">
-                                    <div class="text">Brandon is our Hackathon expert.
-                                        He is a top writer for A.I in Hackernoon.
-                                        In his spare time you can find him performing karate or watching the bee movie.</div>
-                                </div>
-                            </div>
-                    <h3>Brandon Skerritt</h3>
-                    <h4>Food Inspector</h4>
-                    <div class="social-network-logo">
+                        <h3>Thepnathi</h3>
+                        <h4>Vice-President</h4>
+                        <div class="social-network-logo">
                             <div class="first"></div>
                             <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
                             <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
                             <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
                         </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
+                    </div>
 
-    <section class="contact-us" id="contact-us">
-      <div class="container">
-        <h1>Contact us</h1>
-        <div class="row">
-          <div class="column">
-            <div id="map" style="width:100%;height:500px"></div>
-          </div>
-          <div class="column">
-            <form action="https://formspree.io/hacksocliverpool@protonmail.com"
-              method="POST">
-              <label for="name">Your name</label>
-              <input type="text" name="name" placeholder="Your name..">
-              <label for="email">Your email</label>
-              <input type="email" name="_replyto" placeholder="Your email.." />
-              <label for="message">Your message</label>
-              <textarea name="email-content" placeholder="Your message.."
-                        style="height:170px"></textarea>
-              <input type="submit" _hover="true" value="Send">
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+                    <div>
+                        <div class="profile-pic">
+                            <img src="assets/images/committee/Rob.png" class="image"/>
+                            <div class="profile-info">
+                                <div class="text">Brandon is our Hackathon expert.
+                                    He is a top writer for A.I in Hackernoon.
+                                    In his spare time you can find him performing karate or watching the bee movie.</div>
+                                </div>
+                            </div>
+                            <h3>Robert Szafarczyk</h3>
+                            <h4>Core Developer</h4>
+                            <div class="social-network-logo">
+                                <div class="first"></div>
+                                <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                                <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                                <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                            </div>
+                        </div>
 
-    <section id="footer">
-        <h1>Connect with us on</h1>
-        <p class="bio-icons text-center">
-            <a href="https://medium.com/@brandonskerritt">
-                <i class="fab fa-medium"></i>
-            </a>
-            <a href="https://twitter.com/brandon_skerrit">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/brandonls/">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="http://github.com/brandonskerritt/">
-                <i class="fab fa-github"></i>
-            </a>
-        </p>
-        </div>
+                        <div>
+                            <div class="profile-pic">
+                                <img src="assets/images/committee/Phil.png" class="image"/>
+                                <div class="profile-info">
+                                    <div class="text">Phil likes dogs a little too much. Phil is our bank advisor and morale support.
+                                        In his spare time you can find him looking at dogs pictures on Instagram or playing Football.
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Phill Beattie</h3>
+                            <h4>Hackathon Organiser</h4>
+                            <div class="social-network-logo">
+                                <div class="first"></div>
+                                <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                                <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                                <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                            </div>
+                        </div>
 
-    </section>
+                        <div>
+                            <div class="profile-pic">
 
-    <section id="footer-copyright">
-        <h5>©University of Liverpool HackSoc 2018. All rights reserved.</h5>
+                                <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
+                                <div class="profile-info">
+                                    <div class="text">Brandon is our Hackathon expert.
+                                        He is a top writer for A.I in Hackernoon.
+                                        In his spare time you can find him performing karate or watching the bee movie.</div>
+                                    </div>
+                                </div>
+                                <h3>Brandon Skerritt</h3>
+                                <h4>Treasurer</h4>
+                                <div class="social-network-logo">
+                                    <div class="first"></div>
+                                    <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                                    <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                                    <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                                </div>
+                            </div>
 
-    <section id="stay in touch">
-        <button type="button" class="btn btn-primary">Medium</button>
-        <button type="button" class="btn btn-primary">Slack</button>
-        <button type="button" class="btn btn-primary">TWitter</button>
-        <button type="button" class="btn btn-primary">Facebook</button>
-        <button type="button" class="btn btn-primary">Email</button>
-    </section>
+                            <div>
+                                <div class="profile-pic">
+                                    <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
+                                    <div class="profile-info">
+                                        <div class="text">Brandon is our Hackathon expert.
+                                            He is a top writer for A.I in Hackernoon.
+                                            In his spare time you can find him performing karate or watching the bee movie.</div>
+                                        </div>
+                                    </div>
+                                    <h3>Brandon Skerritt</h3>
+                                    <h4>Equality Director</h4>
+                                    <div class="social-network-logo">
+                                        <div class="first"></div>
+                                        <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                                        <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                                        <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="profile-pic">
+                                        <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
+                                        <div class="profile-info">
+                                            <div class="text">Brandon is our Hackathon expert.
+                                                He is a top writer for A.I in Hackernoon.
+                                                In his spare time you can find him performing karate or watching the bee movie.</div>
+                                            </div>
+                                        </div>
+                                        <h3>Brandon Skerritt</h3>
+                                        <h4>Core Developer</h4>
+                                        <div class="social-network-logo">
+                                            <div class="first"></div>
+                                            <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                                            <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                                            <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="profile-pic">
+                                            <img src="https://orig00.deviantart.net/68a0/f/2013/309/6/a/profile_picture_by_fruit_juice_dog-d6t7bul.png" class="image"/>
+                                            <div class="profile-info">
+                                                <div class="text">Brandon is our Hackathon expert.
+                                                    He is a top writer for A.I in Hackernoon.
+                                                    In his spare time you can find him performing karate or watching the bee movie.</div>
+                                                </div>
+                                            </div>
+                                            <h3>Brandon Skerritt</h3>
+                                            <h4>Food Inspector</h4>
+                                            <div class="social-network-logo">
+                                                <div class="first"></div>
+                                                <div><a href="#" class="dark-black"><i class="fab fa-github-square"></i></a></div>
+                                                <div><a href="#"><i class="fab fa-linkedin"></i></a></div>
+                                                <div><a href="#" class="twitter-color"><i class="fab fa-twitter-square"></i></a></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="contact-us" id="contact-us">
+                                <div class="container">
+                                    <h1>Contact us</h1>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div id="map" style="width:100%;height:500px"></div>
+                                        </div>
+                                        <div class="column">
+                                            <form action="https://formspree.io/hacksocliverpool@protonmail.com"
+                                            method="POST">
+                                            <label for="name">Your name</label>
+                                            <input type="text" name="name" placeholder="Your name..">
+                                            <label for="email">Your email</label>
+                                            <input type="email" name="_replyto" placeholder="Your email.." />
+                                            <label for="message">Your message</label>
+                                            <textarea name="email-content" placeholder="Your message.."
+                                            style="height:170px"></textarea>
+                                            <input type="submit" value="Send">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="footer">
+                            <h1>Connect with us on</h1>
+                            <p class="bio-icons text-center">
+                                <a href="https://medium.com/@brandonskerritt">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                                <a href="https://twitter.com/brandon_skerrit">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/brandonls/">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="http://github.com/brandonskerritt/">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </section>
+
+                    <section id="footer-copyright">
+                        <h5>©University of Liverpool HackSoc 2018. All rights reserved.</h5>
+
+                        <section id="stay in touch">
+                            <button type="button" class="btn btn-primary">Medium</button>
+                            <button type="button" class="btn btn-primary">Slack</button>
+                            <button type="button" class="btn btn-primary">TWitter</button>
+                            <button type="button" class="btn btn-primary">Facebook</button>
+                            <button type="button" class="btn btn-primary">Email</button>
+                        </section>
 
 
 
 
-    <script src="src/overlay-menu.js"></script>
-    <script src="src/footer.js"></script>
-    <script src="src/contact-us.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZYYQ0Qh4eoouhUDsMQxrhn_VM4_aoW9s&callback=myMap"></script>
-</body>
+                        <script src="src/overlay-menu.js"></script>
+                        <script src="src/footer.js"></script>
+                        <script src="src/contact-us.js"></script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZYYQ0Qh4eoouhUDsMQxrhn_VM4_aoW9s&callback=myMap"></script>
+                    </body>
 
-</html>
+                    </html>
