@@ -302,7 +302,7 @@
                                         </div>
                                         <div class="column">
                                             <form action="https://formspree.io/hacksocliverpool@protonmail.com"
-                                            method="POST" onsubmit="return validateInput()">
+                                            method="POST" onsubmit="validateInput(); return false">
                                             <label for="name">Your name</label>
                                             <input type="text" name="name" placeholder="Your name..">
                                             <label for="email">Your email</label>
@@ -310,7 +310,7 @@
                                             <label for="message">Your message</label>
                                             <textarea name="email-content" placeholder="Your message.."
                                             style="height:170px"></textarea>
-                                            <input type="submit" value="Send">
+                                            <input type="submit" value="Send" onclick="validateInput()">
                                         </form>
                                     </div>
                                 </div>

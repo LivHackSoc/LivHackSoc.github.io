@@ -16,9 +16,7 @@ const validateInput = () => {
   for (i = 0; i < input.length; i++) {
       if (input.values == "" || input.values == null) {
           alert("Please ensure that all field contains relevant input data");
-          return false;
-      } else {
-        return true;
+          return true;
       }
   }
 }
