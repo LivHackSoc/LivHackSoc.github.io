@@ -1,3 +1,7 @@
+.gold {
+    color: #f7b733;
+}
+
 .twitter-color {
     color: #00b0ff;
   }
@@ -8,8 +12,4 @@
   
 .full-black {
     color: rgba(0, 0, 0, 1);
-}
-
-.gold-color {
-    color: #f7b733;
 }

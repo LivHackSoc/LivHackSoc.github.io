@@ -15,7 +15,6 @@
     vertical-align: middle;
     width: 100%;
     max-width: none;
-    color: #f7b733;
 }
 
 .landing-content {
@@ -56,7 +55,6 @@ button {
 }
 
 #navigation-bar {
-    color: #f7b733;
     position: fixed;
     background-color: black;
     height: 70px;

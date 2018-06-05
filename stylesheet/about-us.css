@@ -9,13 +9,8 @@
     grid-template-rows: repeat(2, 430px);
 }
 
-.about-us-content > div {
-    color: #f7b733;
-}
-
 .about-us > h1 {
     padding: 30px;
-    color: #f7b733;
     font-size: 3em;
     text-align: center;
 }
