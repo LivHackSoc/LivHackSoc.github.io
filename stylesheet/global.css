@@ -78,3 +78,10 @@ ul > li {
     padding-top: 20px;
     padding-right: 20px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

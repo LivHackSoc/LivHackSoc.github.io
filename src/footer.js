@@ -1,7 +1,9 @@
-function updateFooterYear(year) {
-  const footer = document.querySelector("#footer-copyright");
-  footer.innerHTML = `©University of Liverpool HackSoc ${year}. All rights reserved.`;
+// Get the current year
+const currYear = (new Date()).getFullYear();
+
+// Apply the year to the div
+const updateFooterYear = (year) => {
+  document.getElementById('year').innerHTML = year;
 }
 
-const currYear = (new Date()).getFullYear();
 updateFooterYear(currYear);
