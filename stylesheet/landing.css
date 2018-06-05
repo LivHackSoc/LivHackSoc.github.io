@@ -59,7 +59,7 @@ button {
     color: #f7b733;
     position: fixed;
     background-color: black;
-    height: auto;
+    height: 70px;
     filter: opacity(90%);
 }
 
