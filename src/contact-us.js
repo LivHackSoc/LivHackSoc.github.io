@@ -11,12 +11,15 @@ function myMap() {
 
 // Ensures user input data into all input fields
 const validateInput = () => {
-  var input = document.getElementsByTagName("input");
+  var input = document.getElementsByTagName("input");;
 
   for (i = 0; i < input.length; i++) {
-      if (input.values == "" || input.values == null) {
+    var inputValues = document.getElementsByTagName("input")[i].value;
+      if (inputValues == "" || inputValues == null) {
           alert("Please ensure that all field contains relevant input data");
-          return true;
+          return false;
+      } else {
+        return true;
       }
   }
 }
