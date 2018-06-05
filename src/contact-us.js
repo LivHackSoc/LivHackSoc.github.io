@@ -8,3 +8,15 @@ function myMap() {
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 }
+
+// Ensures user input data into all input fields
+const validateInput = () => {
+  var input = document.getElementsByTagName("input");
+
+  for (i = 0; i < input.length; i++) {
+      if (input.values == "" || input.values == null) {
+          alert("Please ensure that all field contains relevant input data");
+          return false;
+      }
+  }
+}
