@@ -8,13 +8,15 @@ function closeNav() {
 }
 
 
-// Make navigation labels disapear when scrolling down
+/** Make navigation labels disapear when scrolling down */
+// get client screen height
+const screenHeight = window.innerHeight;
 // listen for scrolling
 window.addEventListener("scroll", function(event) {
     let windowHeight = window.pageYOffset;
     visible = true;
 
-    if (windowHeight > 600) {
+    if (windowHeight > screenHeight-100) {
         visible = false;
     } else {
         visible = true;
