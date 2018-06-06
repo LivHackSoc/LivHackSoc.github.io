@@ -1,9 +1,9 @@
 // Open the menu by display the
-function openNav() {
+const openNav = () => {
     document.getElementById("myNav").style.width = "100%";
 }
 
-function closeNav() {
+const closeNav = () => {
     document.getElementById("myNav").style.width = "0%";
 }
 
@@ -26,7 +26,7 @@ window.addEventListener("scroll", function(event) {
 }, false);
 
 // toggle label visibility
-function toggleNavButtons(visible) {
+const toggleNavButtons = (visible) => {
     if (visible) {
         document.getElementById("about").style.visibility = "visible";
         document.getElementById("team").style.visibility = "visible";

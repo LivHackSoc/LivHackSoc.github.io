@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded',function(event){
 
         setTimeout(function() {
           typeWriter(text, i + 1, fnCallback)
-        }, 80);
+        }, 80); // speed of typing
       }
       else if (typeof fnCallback == 'function') {
         // timer before the next setence
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',function(event){
        if (typeof dataText[i] == 'undefined'){
           setTimeout(function() {
             StartTextAnimation(0);
-          }, 30000);
+          }, 30000); // time before it replays the starting dataText again
        }
 
       if (i < dataText[i].length) {
