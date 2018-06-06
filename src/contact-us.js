@@ -11,15 +11,15 @@ function myMap() {
 
 // Ensures user input data into all input fields
 const validateInput = () => {
-  var input = document.getElementsByTagName("input");;
+  var form = document.getElementById("contact-form");
+  var inputs = form.querySelectorAll("input, textarea");
 
-  for (i = 0; i < input.length; i++) {
-    var inputValues = document.getElementsByTagName("input")[i].value;
-      if (inputValues == "" || inputValues == null) {
+  for (i = 0; i < inputs.length; i++) {
+      var inputValue = inputs[i].value;
+      if (inputValue == "" || inputValue == null) {
           alert("Please ensure that all field contains relevant input data");
           return false;
-      } else {
-        return true;
       }
   }
+  return true;
 }
