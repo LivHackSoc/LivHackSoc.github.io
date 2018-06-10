@@ -1,12 +1,28 @@
+#footer {
+    background:  rgba(0, 0, 0, 0.90);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(1, 200px);
+    grid-gap: 1em;
+}
+
+#footer > div {
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f7b733;
+}
+
+
 #footer .btn {
     color: #f8f8f8;
     margin-left: 1%;
-}
-
-#footer {
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: center;
 }
 
 #footer-copyright{

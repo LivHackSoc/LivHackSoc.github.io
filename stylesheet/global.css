@@ -85,3 +85,15 @@ ul > li {
     margin-right: auto;
     width: 50%;
 }
+
+.center-text {
+    text-align: center;
+}
+
+.some-padding {
+    padding: 1em;
+}
+
+.some-left-margin {
+    margin: 10px;
+}

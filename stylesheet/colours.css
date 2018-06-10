@@ -2,9 +2,9 @@
     color: #f7b733;
 }
 
-.twitter-color {
-    color: #00b0ff;
-  }
+.custom-white {
+    color: white;
+}
   
 .dark-black {
     color: rgba(0, 0, 0, 0.87);
@@ -13,3 +13,7 @@
 .full-black {
     color: rgba(0, 0, 0, 1);
 }
+
+.twitter-color {
+    color: #00b0ff;
+  }
