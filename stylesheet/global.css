@@ -93,3 +93,27 @@ ul > li {
 .some-left-margin {
     margin: 10px;
 }
+
+.gold {
+    color: #f7b733;
+}
+
+.custom-white {
+    color: white;
+}
+  
+.dark-black {
+    color: rgba(0, 0, 0, 0.87);
+}
+  
+.full-black {
+    color: rgba(0, 0, 0, 1);
+}
+
+.linkedin-color {
+    color: #0077B5;
+}
+
+.twitter-color {
+    color: #00b0ff;
+  }
