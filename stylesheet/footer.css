@@ -2,7 +2,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-template-rows: repeat(1, 180px);
-    grid-gap: 1em;
+}
+
+/* temp fix */
+#footer > div {
+    margin-left: 120px;
+    padding: 1em;
 }
 
 a {
@@ -23,4 +28,8 @@ a:hover {
     color: black;
     font-size: 1.25em;
     padding: 0.5%;
-  }
+}
+
+#copyright {
+    margin-top: 50px;
+}
