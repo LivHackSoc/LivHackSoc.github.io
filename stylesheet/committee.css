@@ -1,6 +1,3 @@
-.committee {
-    background: rgba(0, 0, 0, 0.90);
-}
 
 .committee > h1 {
     padding: 30px;
@@ -56,8 +53,8 @@
 }
 
 .text {
-    color: black;
-    text-shadow: 2px 2px 4px white;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 .social-network-logo {

@@ -1,14 +1,8 @@
 #footer {
-    background:  rgba(0, 0, 0, 0.90);
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(1, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: repeat(1, 180px);
     grid-gap: 1em;
-}
-
-#footer > div {
-    padding: 2em;
 }
 
 a {
@@ -23,10 +17,6 @@ a:hover {
 #footer .btn {
     color: #f8f8f8;
     margin-left: 1%;
-}
-
-#footer-copyright{
-    font-color: black;
 }
 
 .bio-icons a {
