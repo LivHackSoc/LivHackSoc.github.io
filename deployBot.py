@@ -11,9 +11,6 @@ from bs4 import BeautifulSoup
 import urllib.request
 from multiprocessing import Process
 
-# creates a global check_link object
-check_link_obj = check_link.check_link()
-
 def get_all_links(address):
     # get all links on a website, return a list
     resp = urllib.request.urlopen("http://www.gpsbasecamp.com/national-parks")
@@ -21,7 +18,8 @@ def get_all_links(address):
     return set([link['href'] for link in soup.find_all('a', href=True)])
 
 def threader(website):
-    # this function is used to create new threads
+    # creates a new check_link object. this function is used for threadding
+    check_link_obj = check_link.check_link()
     check_link_obj.check(website)
 
 def main():
