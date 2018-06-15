@@ -13,8 +13,8 @@ from bs4 import BeautifulSoup
 import urllib.request
 
 def get_all_links(address):
-    resp = urllib.request.urlopen("http://www.gpsbasecamp.com/national-parks")
-    soup = BeautifulSoup(urllib.request.urlopen("http://www.gpsbasecamp.com/national-parks"), from_encoding=resp.info().get_param('charset'))
+    resp = urllib.request.urlopen(address)
+    soup = BeautifulSoup(urllib.request.urlopen(address), from_encoding=resp.info().get_param('charset'))
     return [link['href'] for link in soup.find_all('a', href=True)]
 
 def threader():
