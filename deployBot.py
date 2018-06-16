@@ -1,6 +1,6 @@
 # Deploy bot for Python
 # TODO
-# check all links on page for 404
+# [X] check all links on page for 404
 # check all images to see if they have an alt text
 # compress html
 # compress javascript
@@ -11,24 +11,32 @@ from bs4 import BeautifulSoup
 import urllib.request
 from multiprocessing import Process
 
+# creates a global check_link object
+check_link_obj = check_link.check_link()
+
 def get_all_links(address):
-    # get all links on a website, return a list
-    resp = urllib.request.urlopen("http://www.gpsbasecamp.com/national-parks")
-    soup = BeautifulSoup(urllib.request.urlopen("http://www.gpsbasecamp.com/national-parks"), from_encoding=resp.info().get_param('charset'))
-    return set([link['href'] for link in soup.find_all('a', href=True)])
+    # get all links on a website, return a set
+    resp = urllib.request.urlopen(address)
+    soup = BeautifulSoup(resp, 'html.parser')
+    links = soup.find_all('a')
+    return set([link.get('href') for link in links
+                if link.get('href') and link.get('href')[0:4]=='http'])
 
 def threader(website):
-    # creates a new check_link object. this function is used for threadding
-    check_link_obj = check_link.check_link()
-    check_link_obj.check(website)
+    # this function is used to create new threads
+    response = check_link_obj.check(website)
+    if response != True:
+        print("HTTP " + str(response) + " " +  website)
 
 def main():
     # creates new threads of threader, starts them then joins them together
     website = input("What is the address of the website? ")
     all_links = get_all_links(website)
-    processes = [Process(target = threader, args = (i)) for i in all_links]
-    map(lambda x: x.start(), processes)
-    map(lambda y: y.join(), processes)
+    for i in all_links:
+        try:
+            Process(target = threader, args = (i, )).start()
+        except Exception as e:
+            pass
 
 if __name__=="__main__":
     main()
