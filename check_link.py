@@ -3,7 +3,7 @@ import requests
 class check_link():
     def __init__(self): 
         # generates bad responses from 400 to 409 and from 501 to 503
-        self.bad_resp = list(range(399, 410)).append(range(500, 504))
+        self.bad_resp = list(range(400, 409)) + list(range(501, 504))
         self.badLinks = {}
     
     def __str__(self):
@@ -16,16 +16,14 @@ class check_link():
         try:
             req = requests.get(address)
             resp = req.status_code
-            # this if statement means we save the iteration of the code
-            if resp.status < self.bad_resp[-1] + 1 and resp.status > self.bad_resp[0] - 1:
-                if resp.status in self.bad_resp:
-                    print("HTTP" + resp.status_code + " found! At address " + address)   
-                    # add the badlink to a dictionary of bad links
-                    self.badLinks.update({resp.status_code : address})
-                    return False
-            else:
+            if resp == 200:
                 return True
-
+            else:
+                # it's possible to get HTTP 999: access denied
+                # which isn't an error
+                if resp in self.bad_resp:
+                    self.badLinks.update({resp : address})
+                    return resp
         except Exception as e:
             print ("{}{}".format(e, address))
             pass
