@@ -19,8 +19,8 @@ def get_all_links(address):
     resp = urllib.request.urlopen(address)
     soup = BeautifulSoup(resp, 'html.parser')
     links = soup.find_all('a')
-    return set([link.get('href') for link in links
-                if link.get('href') and link.get('href')[0:4]=='http'])
+    return {link.get('href') for link in links
+                if link.get('href') and link.get('href')[0:4]=='http'}
 
 def threader(website):
     # this function is used to create new threads
