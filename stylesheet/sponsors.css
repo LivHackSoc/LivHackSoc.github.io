@@ -5,14 +5,23 @@
 
 #sponsors-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
 }
 
 #sponsors-inner > div {
     padding: 1em;
+    text-align: center;
 }
 
-div > img {
-    height: 250px;
+#sponsors-logo > img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#sponsors > button {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
 }
